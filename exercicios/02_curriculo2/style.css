@@ -1,0 +1,45 @@
+.pessoal h1{
+    width: 80%;
+    padding: 0px 10px;
+    background-color: black;
+    margin: 20px auto;
+    border-bottom: solid 3px rgb(187, 184, 184);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 46px;
+}
+
+h2{
+    width: 80%;
+    background-color: black;
+    margin: 20px auto;
+    padding: 10px 10px;
+    border-bottom: solid 3px rgb(187, 184, 184);
+    color: white;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+}
+
+p{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    color: rgb(49, 48, 48);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3, h4, ul{
+    width: 80%;
+    margin: 10px auto;
+    color: rgb(49, 48, 48);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.experiencias a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

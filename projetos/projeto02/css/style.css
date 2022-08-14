@@ -1,0 +1,193 @@
+* {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------------------------------------HEADER E NAV ----------------------------------*/
+header {
+    margin: 80px auto 0 auto;
+    background-image: url(../imgs/topo.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 1000px;
+    height: 538px;
+}
+
+header > nav{
+    height: 50px;
+    width: 1000px;
+    background-color: #162028
+}
+
+nav img{
+    margin: 4px 170px;
+    width: auto;
+    height: 35px;
+}
+
+nav .menu{
+    display: inline-block;
+    height: 50px;
+    float: right;
+}
+.menu li{
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #425564;
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: color 0.3s linear;
+}
+
+a:hover{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------- MAIN --------------------------------------*/
+
+main{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+main .portfolio{
+    margin: 60px auto 80px auto;
+}
+
+.portfolio h1{
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 36px;
+    color: #252525;
+}
+
+.portfolio p{
+    margin: 0 100px 0 100px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    color: #555;
+    
+}
+
+/*-----------------------------------CARDS---------------------------------------*/
+
+main .cards{
+    margin: 20px auto 20px auto;
+    width: 1000px;
+}
+
+.cards .card1{
+    display: inline-block;
+    margin: 0 20px 0px 100px;
+    text-align: center;
+}
+
+.cards .card2{
+    display: inline-block;
+    margin: 0 20px 0px auto;
+    text-align: center;
+}
+
+.cards .card3{
+    display: inline-block;
+    text-align: center;
+}
+
+.cards .name{
+    margin: 8px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(83,86,85,255);
+}
+
+.cards .description{
+    color: rgb(184, 184, 184);
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*------------------------------------ABOUT--------------------------------------------*/
+
+main .about{
+    height: 600px;
+    background-color: #003d52;
+    background-image: url(../imgs/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin: 100px 0 50px 0;
+    padding: 100px 100px 60px 90px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.about h1{
+    width: 700px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.about p{
+    margin: 50px 0;
+    width: 445px;
+    height: 250px;
+    text-align: left;
+    line-height: 1.5;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*--------------------------------------CONTACT-----------------------------------------------*/
+
+main .contact{
+    text-align: center;
+}
+
+.contact{
+    text-transform: uppercase;
+    color: #003d52;
+}
+.contact p{
+    font-style: normal;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.contact address span{
+    display: block;
+    font-style: normal;
+    margin: 2px 0 50px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+/*-------------------------------------------------------------------------------------*/
+
+footer{
+    margin: 40px auto 40px auto;
+    height: 50px;
+    width: 1000px;
+    box-sizing: border-box;
+    background-color: #0b171f;
+    text-align: center;
+    padding: 16px 0 0 0;
+    color: #6f8597;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+
