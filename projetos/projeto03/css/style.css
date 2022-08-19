@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 0;
+    outline: none;
     box-sizing: border-box;
 }
 body {
@@ -62,24 +62,25 @@ h5{
     line-height: 1.5;
     color: rgba(255, 255, 255, .5);
 }
-.cabecalho h1 strong{
+.cabecalho .cabecalho-title strong{
     color: white;
     font-weight: normal;
 }
 
 .cabecalho .cabecalho-paragrafo{
     float: right;
-    margin: 15px 0 0 0;
-    color: rgb(99, 98, 98);
+    margin: 18px 0 0 0;
+    color: rgba(255, 255, 255, .5);
 }
+
 
 
 .cabecalho-link{
     color: inherit;
     text-decoration: none;
     border-bottom: 1px dotted rgba(145, 145, 145, 0.575);
-    transition: color 0.2s;
-    transition-timing-function: linear;
+    transition: color 0.2s linear, border-bottom 0.2s linear;
+
 
 }
 
@@ -146,7 +147,7 @@ h5{
     margin: 150px 0 35px 0;
 }
 
-.section01-tile{
+.section01-title{
     margin: 0 0 32px 0;
 }
 
@@ -178,22 +179,23 @@ h5{
 /*-----------------------------------------------------------------------------------*/
 
 .recentWorks{
-    height: 895px;
+    height: 870px;
     width: 780px;
     margin: 0px 0 35px 0;
 }
 
 .recentWorks-title{
-    margin: 0 0 25px 0;
+    margin: 0 0 25px 0;     
 }
 
 .recentWorks-card{
     width: 300px;
+
 }
 
 .recentWorks-card .title{
     font-size: 13px;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
 }
 
 .recentWorks-card .description{
@@ -203,7 +205,7 @@ h5{
 .recentWorks figure img{
     border-radius: 5px;
     height: 160px;
-    width: 260px;
+    width: 290px;
 }
 
 .recentWorks .card1, .card2, .card3, .card4, .card5, .card6{
@@ -282,25 +284,14 @@ h5{
     width: 260px;
 }
 
-.formContact-name input{
+.formContact-name input, .formContact-email input{
     width: 265px;
     height: 45px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
     padding: 20px 0 20px 14px;
-    background-color: rgb(197, 197, 197);
-    display: inline;
-}
-
-.formContact-email input{
-    width: 255px;
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 20px 0 20px 14px;
-    background-color: rgb(197, 197, 197);
+    background-color: #ccc;
     display: inline;
 }
 
@@ -311,7 +302,7 @@ h5{
     width: 535px;
     height: 140px;
     padding: 20px 0 20px 14px;
-    background-color: rgb(197, 197, 197);
+    background-color: #ccc;
 }
 
 .formContact-button{
@@ -381,6 +372,7 @@ h5{
     text-decoration: none;
     color: #009d71;
     border-bottom: 1px dotted #009d71;
+    transition: color 0.2s linear, border-bottom 0.2s linear;
 }
 
 .text-content a:hover{
@@ -439,11 +431,11 @@ h5{
 }
 
 .preformat-code{
-    border: 1px solid rgb(212, 212, 212);
+    border: 1px solid #efefef;
     border-radius: 5px;
     font-size: 12px;
-    background-color: rgb(248, 248, 248);
-    color: #a59a9a;
+    background-color: #f7f7f7;
+    color: #929292;
     margin: 18px 0 0 0;
 }
 
@@ -493,8 +485,8 @@ h5{
 .list-alternate li:hover{
     width: 300px;
     font-size: 15px;
-    border-top: solid 1px #cecbcb;
-    border-bottom: solid 1px #cecbcb;
+    border-top: solid 1px #d8d8d8;
+    border-bottom: solid 1px #d8d8d8;
     margin: 0;
 } 
 
@@ -543,7 +535,6 @@ h5{
     background-color:#ffffff;
     color: #009d71;
 }
-
 
 .links-Medios .medio2{
     border-radius: 6px;
@@ -758,6 +749,7 @@ h5{
 .tables-default tbody td{
     border-bottom: solid 1px rgb(189, 189, 189);
     padding: 10px 10px;
+    font-size: 15px;
 }
 
 .tables-default tbody{
@@ -806,6 +798,9 @@ h5{
     margin: 15px 0 25px 0;
     width: 192px;
 }
+button{
+    cursor: pointer;
+}
 
 .buttons-grandes-one .buttons-grande1{
     padding: 10px 22px;
@@ -824,6 +819,7 @@ h5{
     border: solid 2px #009d71;
     border-radius: 4px;
     color: #009d71;
+    cursor: pointer;
 }
 
 .buttons-grandes-one .buttons-grande2{
@@ -875,6 +871,7 @@ h5{
     transition-property: background-color, color;
     transition-duration: 0.2s;
     transition-timing-function: linear;
+
 }
 
 .buttons-pequenos-one .buttons-pequeno2:hover{
@@ -888,6 +885,7 @@ h5{
 .buttons-grandes-two, .buttons-pequenos-two{
     margin: 15px 0 25px 0;
     width: 100px;
+    
 }
 
 .buttons-grandes-two .buttons-grande3{
@@ -1078,20 +1076,19 @@ h5{
 }
 .imagens figure{
     display: inline-block;
-    text-align: center;
 }
 
 .imagens .imagens-full-figura1 img{
+    
     width: 775px;
     margin: 20px 0 10px 0;
     border-radius: 5px;
 }
 
 .imagens .imagens-thumbs img{
-    width: 245px;
+    width: 248px;
     border-radius: 5px;
-    margin: 0 5px 5px 5px;
-    text-align: center;
+    margin: 0 5px 5px 2.2px;
 }
 
 /*-----------------------------------------------------------------------------------*/
