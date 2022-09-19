@@ -1,0 +1,50 @@
+
+label input[type="checkbox"]:focus + span{
+    box-shadow: 0 0 0 1px red;
+}
+input[type="checkbox"]{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: inline-block;
+}
+
+
+.check{
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+
+input[type='checkbox'] + .check{
+    background-color: #ccc;
+    position: relative;
+    
+}
+
+input[type='checkbox'] + .check:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: rgb(145, 145, 145);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: all .2s ease-in-out;
+}
+
+
+input[type='checkbox']:checked + .check:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 34px;
+}

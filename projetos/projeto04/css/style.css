@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen", sans-serif;
+}
+
+.clearfix:after, .row:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.cabecalho, .content-section01{
+    text-align: center;
+}
+
+.cabecalho .cabecalho-logo > img{
+    margin: .6em 0;
+}
+
+.cabecalho-menu ul{
+    background-color: #612674;
+    list-style: none;
+    padding: 1em 0;
+    transition: all 150ms;
+    transition-timing-function: linear;
+}
+
+
+.cabecalho-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: inline-block;
+}
+
+.cabecalho-menu li:hover{
+    background-color: #7c3792;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.content-section01{
+    height: 13em;
+}
+
+.section-01-iconPlay{
+    height: 5em;
+    display: none;
+}
+
+.iconplay{
+    max-width: 100%;
+    max-height: 100%;
+}
+.content-section01 .section01-title{
+    color: #612674;
+    padding: 1.3em;    
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.content-section01 .section01-content{
+    font-size: 1em;
+    padding: 0 2em 2em 2em;
+    color: #a87bb7;
+    font-weight: 900;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: #58c4c4;
+    padding: 1em 2.5em;
+    color: white;
+    text-decoration: none;
+    transition: all 150ms;
+    transition-timing-function: linear;
+}
+
+.button:hover{
+    background-color: #37a0a0;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.content-cards{
+    margin: 3em 0;
+    text-align: center;
+}
+
+h3{
+    margin: .312em 0 .5em 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #612674;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.content-cards article p{
+    margin: 0 1em;
+    line-height: 1.8;
+    color: #222;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+.designgs article{
+    margin-bottom: 4em;
+}
+.designgs p{
+    line-height: 1.2;
+    margin: 1em 0 2.5em 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.rodape {
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+}
+.rodape-icons {
+    background-color: #303d4c;
+}
+
+.rodape-icons li{
+    margin: 0.32em 0 0 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.rodape-icons a{
+    padding: .5em .2em .3em .2em;
+    display: inline-block;
+}
+
+.rodape-icons i{
+    border-radius: 50%;
+    background-color:  #25303e;
+    color: #83969f;
+    font-size: .95em;
+    padding: .5em .6em;
+}
+
+.rodape-title{
+    padding: 0.5em 0 .9em 0;
+    font-weight: 1000;
+}
+.rodape-text{
+    padding: 0 4em 2em 4em;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 48.75em) {
+    .cabecalho-logo{
+        float: left;
+        margin: 0 0 0 3.2em;
+    }
+
+    .cabecalho-menu ul{
+        display: inline-block;
+        background-color: transparent;
+        float: right;
+        padding: 2.2em 3.2em 0;
+        transition: all 150ms;
+        transition-timing-function: linear;
+    }
+
+    .cabecalho-menu a{
+        color: #612674;
+        font-weight: bold;
+    }
+
+    .cabecalho-menu li{
+        display: inline-block;
+    }
+    
+    .cabecalho-menu a:hover{
+        background-color: #e7d9fc;
+    }
+
+    .section-01-iconPlay{
+        display: block;
+    }
+    
+/*----------------------------------------------------------------------------------------------------------------------*/
+ 
+    .content-section01{
+        background-color: #521a66;
+        height: 20em;
+        padding: 2em 0 0 0;
+    }
+
+    .content-section01 .section01-content, .content-section01 .section01-title{
+        color: white;
+        font-weight: 900;
+    }
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+    .content-cards{
+        margin: 0 3.2em;
+    }
+
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+    .designgs{
+        margin: 0 2.5em;
+    }
+    .designgs-users a, .designgs-goals a{
+        float: right;
+    }
+
+    .designgs article{
+        margin-bottom: 4em;
+    }
+
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 62.5em) {
+
+    .content-section01{
+        background: #521a66 url(../imgs/bg_topo_1198x670.jpg);
+        background-position: center top;
+        background-size: cover;
+        height: 35em;
+        padding-top: 17em;      
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 74em) {
+    .content-section01{
+        background-image: url(../imgs/bg_topo_1600x1374.jpg);
+        padding: 15em 15em 10em;
+        background-position:center right;
+    }
+
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .designgs-users a, .designgs-goals a{
+        float: none;
+    }
+
+    .section-01-iconPlay{
+        display: block;
+        height: 7em;
+    }
+
+}
