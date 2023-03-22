@@ -1,0 +1,52 @@
+<!DOCTYPE html><!--Declaração de tipo de Documento-->
+<html lang="en"><!--Linguagem-->
+<head>
+    <meta charset="UTF-8"><!--Codificação-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafaelsurfce"> <!--Autor da página-->
+    <meta name="description" content="Exercicio 19 + de tela de lcadastro do curso de HTML, CSS e JavaScript"> <!--Descrição do que é a pagina-->
+    <meta name="keywords" content="FastFood, sanduiche, pizza, sucos, bebidas, beirutes, Login, HTML + CSS"> <!--palavras chaves do site-->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- ESTILO-->
+
+    <script src="https://kit.fontawesome.com/9df899838e.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Golos+Text:wght@800&family=Roboto:wght@100&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+
+    
+    <title>FastFood</title>
+</head>
+<body>
+    <div class="container">
+        <header class="container-cabecalho">
+            <h1 class="cabecalho-titulo">Matriz <span>FastFood</span></h1>
+            <h2>Já possui conta? <span>Acesse agora mesmo!</span></h2>
+            <button class="cabecalho-button">ENTRAR</button>
+            <a href="#" class="container-link">Esqueci minha senha.</a> 
+        </header>
+
+        <main class="container-corpo">
+
+            <section class="corpo-formulario">
+                <h1 class="formulario-titulo">Crie sua conta</h1>
+                <span class="formulario-subtitulo">Preencha seus dados</span>
+                <form action="#" method="post" >
+                    <fieldset class="formulario-cadastro">
+                        <label for="username" for="username"><i class="far fa-user"></i><input type="text" id="username" name="username" class="username" placeholder="Nome" autofocus></label>
+                        <label for="email" for="email"><i class="fas fa-envelope"></i><input type="email" name="email" id="email" class="email" placeholder="Email"></label>
+                        <label for="password" for="password"><i class="fas fa-lock"></i><input type="password" id="password" name="password" class="password" placeholder="Senha"></label>
+                    </fieldset>
+                    <label for="formulario-check"><input type="checkbox" name="formulario-check" id="formulario-check"> Li e estou de acordo com o <a href="#"> Termo de Uso e Política de Privacidade</a></label>
+                    <input type="submit" value="cadastrar" class="botton botton-submit" id="botton-submit">
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

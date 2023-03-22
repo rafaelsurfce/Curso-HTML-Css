@@ -1,0 +1,35 @@
+.container{
+    border: 4px solid black;
+    height: 300px;
+}
+
+.container div{
+    margin: 1em;
+    width: 70px;
+    border: 2px solid blue;
+}
+
+.container:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.container:nth-child(3){
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container:nth-child(3) div{
+    width: 40px;
+}
+
+.container:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
